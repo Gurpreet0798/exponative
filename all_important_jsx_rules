@@ -1,0 +1,54 @@
+//IMP:- JSX is not a special way to embed HTML in JavaScript. All JSX does is replace a file's <tags> with equivalent calls to React.createElement(), we can see it live on Babel. Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.
+
+// 1... We can refer to JS variables inside a JSX block by using curly braces.
+
+// 2... Always return JSX using() or grouping tags. Never give the return value undefined.
+
+// 3... We can assign JSX elements to a variable, then we can show that variable inside a JSX block.
+
+// 4... We can use JSX inside if statements and for loops, assign it to variables, accept it as arguments, and return it from functions.
+
+// 5... We can assemble different JSX elements like normal HTML. (using view).
+
+// 6... Any JavaScript expression will work between curly braces, including function calls like 
+//     {getFullName("Vinod", "Kumar", "Thapa")} 
+
+
+
+
+// Challenge No.:-2
+// FlatList => Create a Netflix top 10 shows card and display both vertically and horizontally...
+
+// API OR JSON FILE FOR THE FlatList:-
+// const names = [
+//     {
+//         name: "Archive 81",
+//         year: "2022",
+//         Creator: "Rebecca Sonnenshine",
+//         Genre: "Horror, thriller", 
+//     },
+//     {
+//         name: "Cheer",
+//         year: "2021 - 2022",
+//         Creator: "Greg Whiteley",
+//         Genre: "Docuseries", 
+//     },
+//     {
+//         name: "Cobrs Kai",
+//         year: "2022",
+//         Creator: "Lauren Schimel mission",
+//         Genre: "Reality", 
+//     },
+//     {
+//         name: "Emily in Paris",
+//         year: "2020",
+//         Creator: "Darren Star",
+//         Genre: "Romance, Drama", 
+//     },
+//     {
+//         name: "Death Note",
+//         year: "2021",
+//         Creator: "unknown",
+//         Genre: "Horror, thriller", 
+//     },
+// ];
