@@ -5,6 +5,8 @@ import CustomComponent from "./src/screens/CustomComponent";
 import FirstChallenge from "./src/screens/FirstChallenge";
 import FlatListDemo from "./src/screens/FlatListDemo";
 import ChallengeFlatList from "./src/screens/ChallengeFlatList";
+import ImageFile from "./src/screens/Images";
+import OurButton from "./src/screens/OurButton";
 
 //create a component that returns some jsx/simple function
 
@@ -29,7 +31,9 @@ const App = () => {
       <Text>Hi!! , {getFullName("Gurpreet", "Kaur", "Takkar.")} </Text> */}
       {/* <FirstChallenge /> */}
       {/* <FlatListDemo /> */}
-      <ChallengeFlatList />
+      {/* <ChallengeFlatList /> */}
+      {/* <ImageFile /> */}
+      <OurButton />
     </View>
   );
 };

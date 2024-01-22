@@ -41,16 +41,28 @@ const ChallengeFlatList = () => {
     },
   ];
   return (
+    <View>
+    <Text style = {styles.textStyleOne}> List of TOP 10 Series in Netflix.</Text>
     <FlatList
       style={styles.listStyle}
       keyExtractor={(key) => {
         return key.name;
       }}
+      horizontal
+      showsHorizontalScrollIndicator = {false}
       data={netflixSeries}
       renderItem={({ item }) => {
-        return <Text style={styles.textStyles}>{item.name}</Text>;
+        return(
+          <View style = {styles.viewStyle}>
+            <Text style = {styles.textStyle}> NAME: {item.name}</Text>
+            <Text style = {styles.textStyle}> CREATOR: {item.Creator}</Text>
+            <Text style = {styles.textStyle}> YEAR: {item.year}</Text>
+            <Text style = {styles.textStyle}> GENRE: {item.Genre}</Text>
+          </View>
+        );
       }}
     />
+    </View>
   );
 };
 
@@ -60,13 +72,20 @@ const styles = StyleSheet.create({
     padding: 5,
     margin: 20,
   },
-  textStyles: {
+  textStyle: {
     color: "white",
+    fontSize: 20,
+    backgroundColor: "#009688",
+    textAlign: "center",
+    padding: 5,
+  },
+  viewStyle: {
     margin: 20,
     padding: 5,
-    fontSize: 30,
-    backgroundColor: "#9400d3",
-    height: "15%",
+  },
+  textStyleOne: {
+    margin: 30,
+    fontSize: 50,
   },
 });
 export default ChallengeFlatList;
