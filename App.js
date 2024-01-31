@@ -7,6 +7,7 @@ import FlatListDemo from "./src/screens/FlatListDemo";
 import ChallengeFlatList from "./src/screens/ChallengeFlatList";
 import ImageFile from "./src/screens/Images";
 import OurButton from "./src/screens/OurButton";
+import NetflixCard from "./src/components/NetflixCard";
 
 //create a component that returns some jsx/simple function
 
@@ -33,7 +34,8 @@ const App = () => {
       {/* <FlatListDemo /> */}
       {/* <ChallengeFlatList /> */}
       {/* <ImageFile /> */}
-      <OurButton />
+      {/* <OurButton /> */}
+      <NetflixCard />
     </View>
   );
 };
