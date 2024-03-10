@@ -19,6 +19,7 @@ import {
 
 import { useFonts } from "expo-font";
 import AppLoading from "expo-app-loading";
+import { TouchableOpacity } from "react-native-web";
 
 const NetflixCard = () => {
   let [fontsLoad, error] = useFonts({
@@ -53,7 +54,7 @@ const NetflixCard = () => {
           }}
         />
         <View style={styles.poster_info}>
-          <Text style={styles.poster_title}>ALL OF US ARE Dead</Text>
+          <Text style={styles.poster_title}>All Of Us Are Dead</Text>
           <Text style={styles.poster_text}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             corrupti, consequatur, reprehenderit est harum dicta autem minima
@@ -62,11 +63,12 @@ const NetflixCard = () => {
           </Text>
         </View>
         <Button
-          style={styles.buttonStyle}
-          title="Watch Now"
           onPress={() =>
             Linking.openURL("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
           }
+          title="Watch Now"
+          color={"blue"}
+          margin={50}
         />
       </View>
     </View>
@@ -81,8 +83,11 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 30,
+    color: "red",
     marginBottom: 20,
     fontFamily: "JosefinSans_700Bold",
+    // fontStyle: "italic",
+    fontVariant: ["small-caps"],
   },
   poster: {
     width: 250,
@@ -96,22 +101,32 @@ const styles = StyleSheet.create({
   poster_title: {
     fontSize: 20,
     marginBottom: 10,
+    letterSpacing: 1,
+    // text-shadow: -1px 1px 10px rgba(0, 0, 0, 0.75);
+    textShadowOffset: { width: -3, height: 4 },
+    textShadowRadius: 10,
+    textShadowColor: "rgba(0, 0, 0, 0.75)",
+    textTransform: "capitalize",
   },
   poster_text: {
     color: "#999",
     paddingHorizontal: 20,
     marginBottom: 10,
+    fontFamily: "JosefinSans_400Regular_Italic",
+    letterSpacing: 1,
+    lineHeight: 20,
   },
   imgStyle: {
     width: "100%",
     height: undefined,
     aspectRatio: 1,
   },
-  buttonStyle: {
-    borderWidth: 0,
-    borderRadius: 20,
-    padding: 20,
-  },
+  // buttonStyle: {
+  //   borderWidth: 0,
+  //   borderRadius: 20,
+  //   padding: 20,
+  //   backgroundColor: "red",
+  // },
 });
 
 export default NetflixCard;

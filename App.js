@@ -8,6 +8,10 @@ import ChallengeFlatList from "./src/screens/ChallengeFlatList";
 import ImageFile from "./src/screens/Images";
 import OurButton from "./src/screens/OurButton";
 import NetflixCard from "./src/components/NetflixCard";
+import DemoStyles from "./src/screens/DemoStyles";
+import CounterNumber from "./src/screens/CounterNumber";
+import ColorGenerator from "./src/project/ColorGenerator";
+import HookEffect from "./src/screens/HookEffect"
 
 //create a component that returns some jsx/simple function
 
@@ -35,7 +39,11 @@ const App = () => {
       {/* <ChallengeFlatList /> */}
       {/* <ImageFile /> */}
       {/* <OurButton /> */}
-      <NetflixCard />
+      {/* <NetflixCard /> */}
+      {/* <DemoStyles /> */}
+      {/* <CounterNumber /> */}
+      {/* <ColorGenerator /> */}
+      <HookEffect />
     </View>
   );
 };
